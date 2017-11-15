@@ -67,7 +67,7 @@ server <- function(input, output) {
     # Creating rep full name from first, middle, last name
     rep.full.name <- paste(house.rep.info$first_name, house.rep.info$middle_name, house.rep.info$last_name)
     
-    stats <- paste0(rep.full.name, " is ", rep.age.num, " years old. Of the last ", nrow(house.rep.voting), " votes, the representative was in accordance with the majority ", 
+    stats <- paste0(rep.full.name, " is ", rep.age.num, " years old. Of the last ", nrow(house.rep.voting), " votes, this representative was in accordance with the majority ", 
                    rep.voting, "% of the time.")
   })
 }
