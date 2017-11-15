@@ -33,7 +33,8 @@ server <- function(input, output) {
                            filter(gender == "F"))
     )
     
-    return(barplot(gender.num, horiz = T, xlab = "# of Representatives", names.arg = c("Males", "Females"), main = "Representatives by Gender"))
+    return(barplot(gender.num, horiz = T, xlab = "# of Representatives", names.arg = c("Males", "Females"), main = "Representatives by Gender",
+                   xlim = c(0, max(gender.num) + 5)))
   })
   
   # House representatives by party
@@ -46,7 +47,8 @@ server <- function(input, output) {
                           filter(party == "R"))
     )
     
-    return(barplot(party.num, horiz = T, xlab = "# of Representatives", names.arg = c("Democrats", "Republicans"), main = "Representatives by Party"))
+    return(barplot(party.num, horiz = T, xlab = "# of Representatives", names.arg = c("Democrats", "Republicans"), main = "Representatives by Party",
+                   xlim = c(0, max(party.num) + 5)))
   })
   
   # Data about a randomly selected house representative
