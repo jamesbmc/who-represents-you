@@ -5,8 +5,8 @@ account: jamesbmc
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 235644
-bundleId: 1076099
+bundleId: 1080304
 url: https://jamesbmc.shinyapps.io/who-represents-you/
-when: 1510718569.44561
+when: 1510887742.70485
 asMultiple: FALSE
 asStatic: FALSE
